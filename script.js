@@ -49,7 +49,7 @@ function dameImpares() {
 
     if (!isNaN(numeroUsuario)) {
 
-        for (let i = numeroUsuario; i < numeroUsuario + 50; i++) {
+        for (let i = numeroUsuario; i <= numeroUsuario + 50; i++) {
             if (i % 2 !== 0) {
                 console.log(i);
             }
