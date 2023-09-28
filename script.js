@@ -7,3 +7,39 @@ Diseña un algoritmo que imprima los números impares entre un número dado por 
 Entregad vuestra solución por classroom. Si os da tiempo, pensad varias maneras de resolverlo y enviad vuestras soluciones. Podéis enviar una primera solución y luego añadir otras en comentarios.*/
 
 
+//ejercicio 1 en caso de que haya que diferenciar mayusculas de minusculas (estrictamente iguales)
+function contarOcurrencias(letra,frase) {
+
+    let contador = 0;
+  
+    for (let i = 0; i < frase.length; i++) {
+     
+      if (frase[i] === letra) {
+        contador++
+      }
+    }
+  
+    return contador
+  }
+
+
+//ejercicio 1 en caso de que solo interese la letra sin ser caseSensitive
+function contarOcurrencias(letra,frase) {
+
+    let contador = 0;
+  
+    let minusfrase = frase.toLowerCase()
+    let minusletra = letra.toLowerCase()
+  
+    for (let i = 0; i < minusfrase.length; i++) {
+     
+      if (minusfrase[i] === minusletra) {
+        contador++
+      }
+    }
+  
+    return contador
+  }
+  
+  
+  
