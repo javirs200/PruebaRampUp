@@ -42,4 +42,17 @@ function contarOcurrencias(letra,frase) {
   }
   
   
+  //ejercicio 2 
+  function dameImpares() {
   
+    const numeroUsuario = parseInt(prompt("Por favor, ingresa un número:"));
+
+    if (!isNaN(numeroUsuario)) {
+    
+        for (let i = numeroUsuario; i < numeroUsuario + 50; i++) {
+            if(i % 2 !== 0){
+                console.log(i);
+            }
+        }  
+    }
+}
